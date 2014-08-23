@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class Utils
+public class GameUtils: MonoBehaviour
 {
 
     /// <summary>
@@ -12,12 +12,17 @@ public class Utils
     /// <param name="yIndex">Y index. 1 - 20</param>
     public static Vector3 ConvertIndexToWorldPoint (int xIndex, int yIndex)
     {
-        // when xIndex is 1, x is -4.5. xIndex is 10, 5.5
         var x = xIndex;
         var y = yIndex;
         return new Vector3 (x, y, 0);
     }
 
+    /// <summary>
+    /// Gets the name of the block.
+    /// </summary>
+    /// <returns>The block name.</returns>
+    /// <param name="xIndex">X index.</param>
+    /// <param name="yIndex">Y index.</param>
     public static string GetBlockName (int xIndex, int yIndex)
     {
         return "Block:" + xIndex + "," + yIndex;

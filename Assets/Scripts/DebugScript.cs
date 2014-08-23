@@ -12,8 +12,8 @@ public class DebugScript : MonoBehaviour
             for (int y=1; y<=20; y++) {
                 Debug.Log (string.Format ("x:{0}, y:{1}", x, y));
                 var go = Instantiate (block) as GameObject;
-                go.name = Utils.GetBlockName (x, y);
-                go.transform.position = Utils.ConvertIndexToWorldPoint (x, y);
+                go.name = GameUtils.GetBlockName (x, y);
+                go.transform.position = GameUtils.ConvertIndexToWorldPoint (x, y);
             }
         }
     }
