@@ -4,7 +4,7 @@ using System.Collections;
 public class BlockController : MonoBehaviour
 {
 
-    public bool AtRest;
+    public bool willDestroy;
 
     // Use this for initialization
     void Start ()

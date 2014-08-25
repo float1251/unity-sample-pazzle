@@ -951,7 +951,7 @@ GameObject:
   - 33: {fileID: 1379721642}
   - 64: {fileID: 1379721641}
   - 23: {fileID: 1379721640}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1245,6 +1245,8 @@ MonoBehaviour:
   - {fileID: 100000, guid: 0f0492162676e46a095955a4d90261e8, type: 2}
   - {fileID: 100000, guid: e27b5a1ecb0af4126989cf5692490040, type: 2}
   text: {fileID: 1071965294}
+  score: {fileID: 1969066191}
+  destroyBlockNum: 3
 --- !u!114 &1969066190
 MonoBehaviour:
   m_ObjectHideFlags: 0

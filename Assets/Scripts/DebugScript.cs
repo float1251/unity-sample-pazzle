@@ -25,4 +25,13 @@ public class DebugScript : MonoBehaviour
             GameObject.Destroy (block);
         }
     }
+
+    void Update ()
+    {
+        Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+        int layerMask = (1 << LayerMask.NameToLayer ("Default"));
+        if (Physics.Raycast (ray, 10, layerMask))
+            print ("Hit something");
+
+    }
 }
